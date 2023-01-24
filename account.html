@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="font-roboto w-full h-screen flex flex-col">
+    <div class="w-full px-5 sm:px-[27px] pt-[52px] sm:pt-[71px] flex flex-col">
+      <div class="flex justify-between items-center mb-3 sm:mb-[35px]">
+        <span class="font-medium text-[18px] sm:text-[20px]">MyBestFood</span>
+        <div class="flex">
+          <img src="./assets/img/search-orange.svg" alt="" class="brightness-0 w-5 sm:w-[26px] mr-5 sm:mr-[35px] hover:brightness-100 cursor-pointer">
+          <img src="./assets/img/user-orange.svg" alt="" class="brightness-0 w-5 sm:w-[26px] hover:brightness-100 cursor-pointer">
+        </div>
+      </div>
+    </div>
+    <div class="px-5 sm:px-[27px] pt-4 flex mb-[22px] flex items-center border-t border-gray-difficult">
+      <img src="./assets/img/left-arrow.svg" alt="" class="h-[14px] mr-3 cursor-pointer">
+      <span class="font-bold text-[22px] sm:text-3xl leading-6">Account</span>
+    </div>
+    <ul class="tab flex mb-[21px] sm:mb-[45px] py-[14px] px-5 sm:px-[27px] border-y border-gray-difficult font-inter font-medium text-sm sm:text-base leading-[18px] -tracking-[.084px] text-gray-font">
+      <li class="px-[10px] py-[6px] bg-gray-difficult rounded mr-[18px] sm:mr-6 cursor-pointer">Account</li>
+      <li class="px-[10px] py-[6px] hover:bg-number-bg rounded mr-[18px] sm:mr-6 cursor-pointer">Favorite</li>
+      <li class="px-[10px] py-[6px] hover:bg-number-bg rounded mr-[18px] sm:mr-6 cursor-pointer">Mine</li>
+      <li class="px-[10px] py-[6px] hover:bg-number-bg rounded cursor-pointer">Create</li>
+    </ul>
+    <div class="w-full px-5 sm:px-[27px] flex flex-col">
+      <div class="w-full h-full sm:px-[103px] flex font-inter font-normal text-[15px] leading-6 flex flex-col">
+        <div class="mb-[30px] flex flex-col">
+          <span class="mb-[7px]">Account:</span>
+          <input type="text" class="px-[14px] h-[50px] border border-gray-difficult outline-none rounded-[9px]" value="example@example.com">
+        </div>
+        <div class="mb-[30px] flex flex-col">
+          <span class="mb-[7px]">New password:</span>
+          <input type="password" class="px-[14px] h-[50px] border border-gray-difficult outline-none rounded-[9px]" placeholder="Please enter a new password">
+        </div>
+        <div class="mb-[42px] flex flex-col">
+          <span class="mb-[7px]">Password Confirmation:</span>
+          <input type="password" class="px-[14px] h-[50px] border border-gray-difficult outline-none rounded-[9px]" placeholder="Please confirm a new password">
+        </div>
+        <div class="flex flex-col h-full justify-between sm:justify-center mb-[23px]">
+          <button class="w-full h-[50px] bg-orange-difficult hover:bg-orange-difficult-hover active:bg-dark-color disabled:bg-gray-difficult disabled:text-gray-difficult-hover rounded-[9px] mb-[30px] font-medium text-white">Modify</button>
+          <button class="w-full h-[50px] bg-gray-difficult hover:bg-gray-difficult-hover active:bg-gray-difficult-hover disabled:bg-gray-difficult disabled:text-gray-difficult-hover rounded-[9px] font-medium text-gray-font">Log out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/js/tab.js"></script>
+</body>
+
+</html>

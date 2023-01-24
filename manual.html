@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="font-roboto w-full h-screen flex flex-col">
+    <div class="w-full h-full px-5 sm:px-[27px] pt-[52px] sm:pt-[71px] flex flex-col">
+      <div class="flex justify-between items-center mb-3 sm:mb-[35px]">
+        <span class="font-medium text-[18px] sm:text-[20px]">MyBestFood</span>
+        <div class="flex">
+          <img src="./assets/img/search-orange.svg" alt="" class="brightness-0 w-5 sm:w-[26px] mr-5 sm:mr-[35px] hover:brightness-100 cursor-pointer">
+          <img src="./assets/img/user-orange.svg" alt="" class="brightness-0 w-5 sm:w-[26px] hover:brightness-100 cursor-pointer">
+        </div>
+      </div>
+    </div>
+    <div class="flex px-5 sm:px-[27px] pt-4 pb-[23px] border-y border-gray-difficult mb-[24px] sm:mb-[35px] items-center">
+      <img src="./assets/img/left-arrow.svg" alt="" class="h-[14px] mr-3 cursor-pointer">
+      <span class="font-bold text-[22px] sm:text-3xl leading-6">Manual</span>
+    </div>
+    <div class="w-full h-full px-5 sm:px-[27px] pt-[52px] sm:pt-[71px] flex flex-col">
+      <div class="sm:px-[100px] flex flex-col font-inter -tracking-[.084px]">
+        <div class="relative mb-6 sm:mb-[35px]">
+          <div class="relative after:bg-dark-color after:opacity-40 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:rounded-[9px]">
+            <img src="./assets/img/manual.png" alt="" class="w-full sm:w-[580px] rounded-[9px]">
+          </div>
+          <img src="./assets/img/play.svg" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+        </div>
+        <div class="flex justify-between mb-8 sm:mb-[53px] items-center">
+          <span class="font-medium sm:font-bold text-[19px] sm:text-[22px] leading-6">How it works</span>
+          <span class="font-normal text-sm sm:text-base leading-5 sm:leading-[26px] text-[#2FAAD1]"><a href="">Download the manual</a></span>
+        </div>
+        <span class="font-medium sm:font-bold text-[19px] sm:text-[22px] leading-6 mb-[19px] sm:mb-[29px]">Troubleshooting guide</span>
+        <span class="font-bold text-sm sm:text-lg leading-6 mb-[15px]">The oven won't turn on.</span>
+        <ul class="list-disc pl-5 mb-[30px] sm:mb-16 font-normal text-sm sm:text-base leading-5 sm:leading-[26px]">
+          <li class="mb-6">Oven needs to be in flipped-down position in order to power it on.</li>
+          <li class="mb-6">Ensure the power cord is securely plugged into the outlet.</li>
+          <li class="mb-6">Ensure the power cord is not damaged.</li>
+          <li class="mb-6">Insert the power cord into a different outlet in <br>a different room that is on a different circuit.</li>
+          <li class="mb-6">Press the power button.</li>
+        </ul>
+        <span class="font-bold text-sm sm:text-lg leading-6 mb-[15px]">The oven is generating smoke.</span>
+        <ul class="list-disc pl-5 mb-[30px] sm:mb-16 font-normal text-sm sm:text-base leading-5 sm:leading-[26px]">
+          <li class="mb-6">Run a toast cycle to burn off excess grease.</li>
+          <li class="mb-6">Cleaned the oven</li>
+        </ul>
+        <span class="font-bold text-sm sm:text-lg leading-6 mb-[15px]">The heating element is not lighting up.</span>
+        <ul class="list-disc pl-5 mb-[30px] sm:mb-16 font-normal text-sm sm:text-base leading-5 sm:leading-[26px]">
+          <li class="mb-6">This is normal. Different function is adjusting the heating <br> elements'power levels, which set heating elements turning <br> on and off at different times. Sometimes heating elements <br> will not visibly glow.</li>
+          <li class="mb-6">To be sure, you could turn off product and try on another <br> program (e.g.air fry) to recheck element.</li>
+        </ul>
+        <span class="font-bold text-sm sm:text-lg leading-6 mb-[15px]">There is noise coming from the control panel.</span>
+        <ul class="list-disc pl-5 mb-[30px] sm:mb-16 font-normal text-sm sm:text-base leading-5 sm:leading-[26px]">
+          <li class="mb-6">This is normal. Some functions are with fan; some functions <br> are not. When fan working, product sounds will be bigger.</li>
+        </ul>
+        <span class="font-bold text-sm sm:text-lg leading-6 mb-[15px]">The coating on the accessories chipped or worn.</span>
+        <ul class="list-disc pl-5 mb-[30px] sm:mb-16 font-normal text-sm sm:text-base leading-5 sm:leading-[26px]">
+          <li class="mb-6">The coating helps provide easier cleanup after cooking.</li>
+          <li class="mb-6">Aerosol sprays, abrasive cleaners, sharp utensils, and <br> brushed metalutensils are not recommended.</li>
+          <li class="mb-6">Placing accessories in the dishwasher may cause wearing of <br> the coating and rust on the metal rails.</li>
+          <li class="mb-6">Hand-washing in warm, soapy water is highly recommended <br> for cleaning.</li>
+        </ul>
+        <span class="font-bold text-sm sm:text-lg leading-6 mb-[15px]">Why is steam coming out from the oven door?</span>
+        <ul class="list-disc pl-5 mb-[30px] sm:mb-16 font-normal text-sm sm:text-base leading-5 sm:leading-[26px]">
+          <li class="mb-6">This is normal. Foods with a high moisture content may <br> release steam around the door.</li>
+        </ul>
+        <span class="font-bold text-sm sm:text-lg leading-6 mb-[15px]">Why is water dripping onto the desk the oven door?</span>
+        <ul class="list-disc pl-5 mb-[30px] sm:mb-16 font-normal text-sm sm:text-base leading-5 sm:leading-[26px]">
+          <li class="mb-6">This is normal. Foods with a high moisture content (such as <br> frozen breads) may release inside the oven and drip onto the desk</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

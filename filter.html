@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="font-roboto w-full h-screen flex flex-col">
+    <div class="w-full px-5 sm:px-[27px]">
+      <div class="w-full mt-12 sm:mt-[71px] mb-4 sm:mb-[34px] flex justify-between items-center">
+        <span class="font-semibold text-[22px] leading-6">MybestFood</span>
+        <div class="flex justify-between items-center">
+          <img src="./assets/img/search-orange.svg" alt="" class="search w-5 sm:w-[26px] mr-5 sm:mr-[35px] brightness-0 hover:brightness-100 cursor-pointer">
+          <img src="./assets/img/user-orange.svg" alt="" class="user w-5 sm:w-[26px] brightness-0 hover:brightness-100 cursor-pointer">
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex items-center h-[62px] px-5 sm:px-[27px] py-4 border-y border-gray-difficult mb-6 sm:mb-7">
+      <div class="menu flex w-full justify-between items-center">
+        <ul class="tab flex font-inter font-medium text-sm sm:text-base leading-[18px] -tracking-[.084px] text-gray-font">
+          <li class="px-2 py-[6px] bg-gray-difficult rounded mr-3 sm:mr-6 cursor-pointer">Reciepts</li>
+          <li class="px-2 py-[6px] hover:bg-number-bg rounded mr-3 sm:mr-6 cursor-pointer">Favorite</li>
+          <li class="px-2 py-[6px] hover:bg-number-bg rounded mr-3 sm:mr-6 cursor-pointer">Mine</li>
+          <li class="px-2 py-[6px] hover:bg-number-bg rounded cursor-pointer">Manual</li>
+        </ul>
+        <img src="./assets/img/filter-orange.svg" alt="" class="filter h-[17.5px] brightness-0 hover:brightness-100 cursor-pointer">
+      </div>
+      <div class="search-bar hidden w-full h-[44px] flex px-3 items-center border border-gray-difficult rounded-[9px]">
+        <img src="./assets/img/search.svg" alt="" class="mr-2">
+        <input type="text" class="w-full outline-none font-inter font-normal text-[15px] leading-6 text-dark-color">
+      </div>
+    </div>
+    <div class="relative flex flex-wrap px-[27px] justify-center">
+      <div class="overlay hidden absolute bg-dark-color opacity-70 w-full h-full z-20"></div>
+      <div class="flex flex-col filter-modal hidden fixed sm:absolute w-full sm:w-[580px] h-[337px] sm:h-[400px] px-5 sm:px-[53px] py-8 sm:py-10 bottom-0 sm:top-[152px] bg-white border border-number-bg rounded-t-[20px] sm:rounded-[22px] z-40">
+        <span class="font-medium sm:font-bold text-[19px] sm:text-[40px] leading-6 sm:leading-10 mb-[23px] sm:mb-[17px]">Filters</span>
+        <div class="mb-[29px] sm:mb-[27px]">
+          <span class="font-inter font-normal text-sm leading-5 -tracking-[.084px] text-dark-color mb-[6px]">Food for:</span>
+          <ul class="orange-tab for flex font-inter font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">
+            <li class="px-[9px] py-[5px] bg-orange-difficult text-white rounded-[9px] mr-[10px] cursor-pointer">All</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Breakfast</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Lunch</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Dinner</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Tea time</li>
+          </ul>
+        </div>
+        <div class="mb-[29px] sm:mb-[27px]">
+          <span class="font-inter font-normal text-sm leading-5 -tracking-[.084px] text-dark-color mb-[6px]">Food type:</span>
+          <ul class="orange-tab type flex font-inter font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">
+            <li class="px-[9px] py-[5px] bg-orange-difficult text-white rounded-[9px] mr-[10px] cursor-pointer">All</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Dessert</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Snacks</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Meat</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Vegetable</li>
+          </ul>
+        </div>
+        <div class="mb-1 sm:mb-[10px]">
+          <span class="font-inter font-normal text-sm leading-5 -tracking-[.084px] text-dark-color mb-[6px]">Difficulty:</span>
+          <ul class="orange-tab difficulty flex font-inter font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">
+            <li class="px-[9px] py-[5px] bg-orange-difficult text-white rounded-[9px] mr-[10px] cursor-pointer">All</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Newcomer</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Easy</li>
+            <li class="px-[9px] py-[5px] hover:bg-gray-difficult rounded-[9px] mr-[10px] cursor-pointer">Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full sm:w-1/2 my-[10px] cursor-pointer">
+        <div class="flex w-[346px]">
+          <img src="./assets/img/food.png" alt="" class="w-[157px] h-[140px] rounded-[9px] mr-5 sm:mr-8">
+          <div class="font-inter flex flex-col w-[157px]">
+            <span class="font-bold text-xs leading-[18px] -tracking-[.084px] text-orange-difficult mb-[6px]">Menu code: 001</span>
+            <span class="font-medium text-[19px] leading-6 mb-[15px]">Grilled Corn <br>with Butter</span>
+            <div class="flex justify-between">
+              <div class="flex px-[9px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/clock.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">10-20 min</span>
+              </div>
+              <div class="flex px-[6px] py-1 h-[26px] rounded border border-gray-difficult items-center">
+                <img src="./assets/img/termometer.svg" alt="" class="mr-[6px] h-3">
+                <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[127px] fixed bottom-0 bg-white-bottom-gradient"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/js/tab.js"></script>
+  <script src="./assets/js/search.js"></script>
+  <script src="./assets/js/filter.js"></script>
+</body>
+
+</html>

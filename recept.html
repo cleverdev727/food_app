@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="font-roboto w-full h-screen flex flex-col">
+    <div class="w-full h-[303px] sm:h-[500px] rounded-b-[20px] sm:rounded-none bg-recept bg-center bg-h-100% shrink-0 overflow-hidden">
+      <div class="h-full px-5 sm:px-[27px] pt-12 sm:pt-[71px] pb-[29px] bg-light-dark-bg flex flex-col justify-between">
+        <div class="flex justify-between items-center">
+          <span class="font-medium text-[20px] text-white">MyBestFood</span>
+          <div class="flex justify-between">
+            <img src="./assets/img/search-orange.svg" alt="" class="w-5 sm:w-[26px] mr-5 sm:mr-[35px] brightness-0 invert cursor-pointer">
+            <img src="./assets/img/user-orange.svg" alt="" class="w-5 sm:w-[26px] brightness-0 invert cursor-pointer">
+          </div>
+        </div>
+        <div class="flex sm:hidden justify-between">
+          <button class="w-8 h-8 bg-white rounded flex justify-center items-center">
+            <img src="./assets/img/left-arrow.svg" alt="" class="h-[14px] cursor-pointer">
+          </button>
+          <div class="flex justify-between">
+            <button class="w-8 h-8 bg-white rounded flex justify-center items-center mr-[10px]">
+              <img src="./assets/img/share-orange-border.svg" alt="" class="w-4">
+            </button>
+            <button class="w-8 h-8 bg-white rounded flex justify-center items-center">
+              <img src="./assets/img/star-orange-border.svg" alt="" class="w-4">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-full bg-white sm:z-0 sm:mt-0 flex flex-col items-center">
+      <div class="w-[338px] sm:w-[580px] -mt-[10px] sm:-mt-40 mb-12 sm:mb-[75px]">
+        <div class="h-[173px] sm:h-[250px] border rounded-xl border-number-bg mb-[10px] sm:mb-[30px] bg-white px-[43px] sm:px-[62px] py-[34px] sm:py-[54px] flex flex-col items-center cursor-pointer">
+          <span class="font-inter font-bold text-sm leading-[18px] -tracking-[.084px] text-orange-difficult mb-[9px] mt-[5px] sm:mt-0 sm:mb-[17px]">Menu code: 001</span>
+          <span class="font-bold text-[22px] sm:text-[40px] leading-6 sm:leading-10 mb-[23px] sm:mb-[30px]">Grilled Corn with Butter</span>
+          <div class="flex sm:mb-[7px]">
+            <div class="h-[26px] sm:h-[30px] px-2 sm:px-3 border border-gray-difficult rounded flex items-center mr-[6px] sm:mr-2">
+              <img src="./assets/img/clock.svg" alt="" class="w-3 sm:w-[14px] mr-[5px] sm:mr-2">
+              <span class="font-inter font-normal text-sm leading-5 -tracking-[.084px] text-gray-font">10-20 min</span>
+            </div>
+            <div class="h-[26px] sm:h-[30px] px-2 sm:px-3 border border-gray-difficult rounded flex items-center">
+              <img src="./assets/img/termometer.svg" alt="" class="w-3 sm:w-[14px] mr-[5px] sm:mr-2">
+              <span class="font-inter font-normal text-sm leading-5 -tracking-[.084px] text-gray-font">35°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="h-[200px] mb-[10px] sm:mb-[30px] px-5 sm:px-8 py-[18px] sm:py-6 border border-number-bg rounded-xl bg-white flex flex-col font-inter -tracking-[.084px] cursor-pointer">
+          <span class="mt-[1px] sm:mt-[2px] font-bold text-sm sm:text-[22px] leading-6 mb-[6px] -tracking-[.084px]">Ingredients</span>
+          <span class="font-normal text-sm sm:text-base leading-[30px] -tracking-[.084px]">
+            50g milk
+            <br>
+            20g unsalted Butter
+            <br>
+            5g white sugar
+            <br>
+            10g condensed milk
+          </span>
+        </div>
+        <div class="mb-[10px] sm:mb-[30px] border border-number-bg rounded-xl overflow-hidden bg-white cursor-pointer">
+          <img src="./assets/img/step1.png" alt="">
+          <div class="px-5 sm:px-8 py-[14px] sm:py-[26px] flex flex-col font-inter -tracking-[.084px]">
+            <span class="mb-[6px] sm:mb-3 font-bold text-sm sm:text-[22px] leading-6">Step 1</span>
+            <span class="font-normal text-sm sm:text-base leading-5 sm:leading-[30px] mb-[10px] sm:mb-[2px]">
+              Put 15 grams of butter in a bowl, pour 50 grams of milk, 10 grams 
+              <br>
+              of white sugar, use a Weibo stove to bite the butter to melt, stir well;
+            </span>
+          </div>
+        </div>
+        <div class="mb-[10px] sm:mb-[30px] border border-number-bg rounded-xl overflow-hidden bg-white cursor-pointer">
+          <img src="./assets/img/step2.png" alt="">
+          <div class="px-5 sm:px-8 py-[14px] sm:py-[26px] flex flex-col font-inter -tracking-[.084px]">
+            <span class="mb-[6px] sm:mb-3 font-bold text-sm sm:text-[22px] leading-6">Step 2</span>
+            <span class="font-normal text-sm sm:text-base leading-5 sm:leading-[30px] mb-[10px] sm:mb-[2px]">
+              Take it out and prepare to eat (be careful of burning your mouth).
+            </span>
+          </div>
+        </div>
+        <div class="mb-[10px] sm:mb-[30px] border border-number-bg rounded-xl overflow-hidden bg-white cursor-pointer">
+          <img src="./assets/img/step3.png" alt="">
+          <div class="px-5 sm:px-8 py-[14px] sm:py-[26px] flex flex-col font-inter -tracking-[.084px]">
+            <span class="mb-[6px] sm:mb-3 font-bold text-sm sm:text-[22px] leading-6">Step 3</span>
+            <span class="font-normal text-sm sm:text-base leading-5 sm:leading-[30px] mb-[10px] sm:mb-[2px]">
+              Brush the corn, preheat the oven at 200 degrees, and bake for 10 
+              <br>
+              minutes (note that the corn is cooked, because it can retain the 
+              <br>
+              moisture and nutrients of the corn to the maximum), and the corn 
+              <br>
+              can be turned over during the period.
+            </span>
+          </div>
+        </div>
+        <div class="mb-[44px] sm:mb-[54px] border border-number-bg rounded-xl bg-white px-5 sm:px-8 py-[18px] sm:py-[26px] cursor-pointer">
+          <span class="flex font-inter font-bold text-sm sm:text-[22px] leading-6 -tracking-[.084px] mb-4 sm:mb-[22px]">Related knowledge</span>
+          <ul class="font-inter font-normal text-sm sm:text-base leading-5 sm:leading-[26px] -tracking-[.084px] mb-6 list-disc pl-5">
+            <li class="mb-8">Cook the meat sauce as much as possible <br>until it is dry and more delicious.</li>
+            <li class="mb-8">Put the cheese in the taste will be more mellow.</li>
+            <li>A little red wine can be added when <br>stewing the meat sauce.</li>
+          </ul>
+        </div>
+        <div class="w-full flex flex-col">
+          <span class="font-inter font-medium sm:font-bold text[19px] sm:text-[22px] leading-6 -tracking-[.084px] mb-7 sm:mb-6">Another recepits</span>
+          <div class="w-full flex overflow-x-scroll mb-12 sm:mb-[75px]">
+            <div class="font-inter mr-[55px] sm:mr-[22px] flex flex-col cursor-pointer">
+              <img src="./assets/img/food.png" alt="" class="mb-[25px] rounded-[9px] max-w-[157px]">
+              <span class="font-bold text-xs leading-[18px] text-orange-difficult -tracking-[.084px] mb-[6px]">Menu code: 001</span>
+              <span class="font-medium text-[19px] leading-6 mb-4">Provence stew</span>
+              <div class="flex">
+                <div class="px-[9px] h-[26px] border border-gray-difficult rounded flex items-center mr-2">
+                  <img src="./assets/img/clock.svg" alt="" class="w-3 mr-[6px]">
+                  <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font whitespace-nowrap">10-20 min</span>
+                </div>
+                <div class="px-[6px] h-[26px] border border-gray-difficult rounded flex items-center">
+                  <img src="./assets/img/termometer.svg" alt="" class="h-3 mr-[6px]">
+                  <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+                </div>
+              </div>
+            </div>
+            <div class="font-inter mr-[55px] sm:mr-[22px] flex flex-col cursor-pointer">
+              <img src="./assets/img/food.png" alt="" class="mb-[25px] rounded-[9px] max-w-[157px]">
+              <span class="font-bold text-xs leading-[18px] text-orange-difficult -tracking-[.084px] mb-[6px]">Menu code: 001</span>
+              <span class="font-medium text-[19px] leading-6 mb-4">Provence stew</span>
+              <div class="flex">
+                <div class="px-[9px] h-[26px] border border-gray-difficult rounded flex items-center mr-2">
+                  <img src="./assets/img/clock.svg" alt="" class="w-3 mr-[6px]">
+                  <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font whitespace-nowrap">10-20 min</span>
+                </div>
+                <div class="px-[6px] h-[26px] border border-gray-difficult rounded flex items-center">
+                  <img src="./assets/img/termometer.svg" alt="" class="h-3 mr-[6px]">
+                  <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+                </div>
+              </div>
+            </div>
+            <div class="font-inter mr-[55px] sm:mr-[22px] flex flex-col cursor-pointer">
+              <img src="./assets/img/food.png" alt="" class="mb-[25px] rounded-[9px] max-w-[157px]">
+              <span class="font-bold text-xs leading-[18px] text-orange-difficult -tracking-[.084px] mb-[6px]">Menu code: 001</span>
+              <span class="font-medium text-[19px] leading-6 mb-4">Provence stew</span>
+              <div class="flex">
+                <div class="px-[9px] h-[26px] border border-gray-difficult rounded flex items-center mr-2">
+                  <img src="./assets/img/clock.svg" alt="" class="w-3 mr-[6px]">
+                  <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font whitespace-nowrap">10-20 min</span>
+                </div>
+                <div class="px-[6px] h-[26px] border border-gray-difficult rounded flex items-center">
+                  <img src="./assets/img/termometer.svg" alt="" class="h-3 mr-[6px]">
+                  <span class="font-normal text-xs leading-[18px] -tracking-[.084px] text-gray-font">35°C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

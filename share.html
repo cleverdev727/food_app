@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="font-roboto w-full h-screen flex flex-col">
+    <div class="h-[587px] sm:h-[500px] bg-share bg-center bg-h-100% shrink-0">
+      <div class="px-5 sm:px-[27px] pt-[47px] sm:pt-[62px] h-full bg-dark-bg">
+        <div class="w-full h-full relative flex flex-col items-center justify-center">
+          <button class="hidden sm:flex w-10 h-10 absolute top-0 left-0 bg-white rounded-[9px] justify-center items-center">
+            <img src="./assets/img/left-arrow.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-[20px] sm:rounded-none w-full h-full flex justify-center items-center -mt-[15px] sm:mt-0">
+      <div class="w-full sm:w-[580px] sm:h-[629px] border rounded-[22px] border-number-bg mb-0 sm:-mt-40 bg-white px-5 sm:px-[102px] py-[30px] sm:py-14 flex flex-col">
+        <div class="sm:text-center mb-[30px] sm:mb-[57px] flex items-center">
+          <img src="./assets/img/left-arrow.svg" alt="" class="h-[14px] sm:hidden mr-3 cursor-pointer">
+          <span class="font-bold text-[22px] sm:text-[40px] leading-6 sm:leading-10 tracking-[.023em]">Share</span>
+        </div>
+        <div class="w-full font-inter font-medium text-[15px] text-dark-color leading-6 flex flex-col items-center">
+          <button class="relative w-full h-[50px] rounded-[9px] mb-[26px] sm:mb-5 flex items-center justify-center border border-gray-difficult hover:border-orange-difficult active:text-white active:bg-orange-difficult active:border-gray-difficult disabled:bg-gray-difficult disabled:text-gray-difficult-hover">
+            <img src="./assets/img/twitter.svg" alt="" class="w-[22px] absolute left-[14.8px]">
+            Share with twitter
+          </button>
+          <button class="relative w-full h-[50px] rounded-[9px] mb-[26px] sm:mb-5 flex items-center justify-center border border-gray-difficult hover:border-orange-difficult active:text-white active:bg-orange-difficult active:border-gray-difficult disabled:bg-gray-difficult disabled:text-gray-difficult-hover">
+            <img src="./assets/img/facebook.svg" alt="" class="w-[22px] absolute left-[14.8px]">
+            Share with facebook
+          </button>
+          <button class="relative w-full h-[50px] rounded-[9px] mb-[26px] sm:mb-5 flex items-center justify-center border border-gray-difficult hover:border-orange-difficult active:text-white active:bg-orange-difficult active:border-gray-difficult disabled:bg-gray-difficult disabled:text-gray-difficult-hover">
+            <img src="./assets/img/instagram.svg" alt="" class="w-[22px] absolute left-[14.8px] brightness-0">
+            Share with instagram
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

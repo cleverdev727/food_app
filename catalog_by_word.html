@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="font-roboto tracking-[.023em] px-5 py-[50px]">
+    <div class="flex w-full justify-between items-center mb-8">
+      <img src="./assets/img/search-orange.svg" alt="" class="brightness-0 hover:brightness-100 cursor-pointer">
+      <span class="font-bold text-2xl">MyBestFood</span>
+      <img src="./assets/img/menu-orange.svg" alt="" class="brightness-0 hover:brightness-100 cursor-pointer">
+    </div>
+    <ul class="orange-tab flex overflow-x-scroll mb-8 font-inter font-medium text-sm leading-[18px] -tracking-[.084px] text-[#636363]">
+      <li class="bg-orange-difficult px-3 py-[5px] rounded-[9px] text-white whitespace-nowrap cursor-pointer">My reciepts</li>
+      <li class="px-3 py-[5px] hover:bg-gray-difficult rounded-[9px] whitespace-nowrap cursor-pointer">Favorite</li>
+      <li class="px-3 py-[5px] hover:bg-gray-difficult rounded-[9px] whitespace-nowrap cursor-pointer">Mine</li>
+      <li class="px-3 py-[5px] hover:bg-gray-difficult rounded-[9px] whitespace-nowrap cursor-pointer">Share</li>
+      <li class="px-3 py-[5px] hover:bg-gray-difficult rounded-[9px] whitespace-nowrap cursor-pointer">Manual</li>
+    </ul>
+    <div class="button-switch flex w-full bg-button-background rounded-[8.91px] font-inter text-sm leading-[18px] -tracking-[.084px] font-medium p-0.5 mb-[37px]">
+      <div class="w-1/2 flex items-center justify-center py-[5px] rounded-[6.93px] cursor-pointer">
+        By picture
+      </div>
+      <div class="w-1/2 flex justify-center items-center py-[5px] bg-white border-[0.5px] border-button-border shadow-button-shadow rounded-[6.93px] cursor-pointer">
+        By word
+      </div>
+    </div>
+    <table class="w-full font-inter font-normal text-gray-font -tracking-[.084px] leading-[18px] text-left">
+      <thead>
+        <tr class="spacer">
+          <th class=" text-xs pb-4">Menu code</th>
+          <th class="text-xs pb-4 w-1/2">Recipe name</th>
+          <th class="text-xs pb-4">Difficulty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-sm leading-5 py-4">001</td>
+          <td class="relative flex font-medium text-sm text-black py-4">
+            Grilled Corn with Butter
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">002</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Provence stew
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">003</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Potato wedges
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">004</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            French baked potatoes
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">005</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Shepherd Pie
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-yellow-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">006</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            French Fries
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-blue-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">007</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Non-Fried mild Fries
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-orange-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-orange-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">008</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Potato cake
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-blue-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">009</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Milkshake
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">010</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Burger King
+            <div class="absolute right-0 top-0"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-green-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-sm leading-5 py-4">011</td>
+          <td class="relative font-medium text-sm text-black py-4">
+            Eggs and Chips
+            <div class="absolute right-0 top-0 w-10 h-full bg-white-gradient"></div>
+          </td>
+          <td class="py-4">
+            <ul class="flex">
+              <li class="w-[6px] h-[6px] bg-orange-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-orange-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-orange-difficult rounded-full mr-1 cursor-pointer"></li>
+              <li class="w-[6px] h-[6px] bg-gray-difficult rounded-full cursor-pointer"></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="fixed bottom-0 w-full h-[127px] bg-white-bottom-gradient"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/js/tab.js"></script>
+  <script src="./assets/js/switch.js"></script>
+</body>
+
+</html>

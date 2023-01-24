@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="font-roboto w-full h-screen flex flex-col">
+    <div class="h-[410px] sm:h-[500px] bg-fast-login bg-center bg-h-100% shrink-0">
+      <div class="px-5 sm:px-[27px] pt-[47px] sm:pt-[62px] h-full bg-dark-bg">
+        <div class="w-full h-full relative flex flex-col items-center justify-center">
+          <button class="w-10 h-10 absolute top-0 left-0 bg-white rounded-[9px] flex justify-center items-center">
+            <img src="./assets/img/left-arrow.svg" alt="">
+          </button>
+          <div>
+            <div class="mb-[39px] sm:mb-12 flex flex-col items-center">
+              <img src="./assets/img/girl.png" alt="" class="border-2 rounded-full border-white mb-2">
+              <span class="font-bold text-[22px] leading-6 text-white">Stacy Kim</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="font-inter font-normal text-[15px] leading-4 text-white tracking-[.394737px] mb-6 sm:mb-[29px]">Enter PIN code</span>
+              <ul class="flex pin">
+                <li class="w-[10px] h-[10px] rounded-full border border-white mr-4 cursor-pointer"></li>
+                <li class="w-[10px] h-[10px] rounded-full border border-white mr-4 cursor-pointer"></li>
+                <li class="w-[10px] h-[10px] rounded-full border border-white mr-4 cursor-pointer"></li>
+                <li class="w-[10px] h-[10px] rounded-full border border-white cursor-pointer"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white rounded-[20px] sm:rounded-none w-full h-full flex justify-center items-center -mt-[15px] sm:mt-0">
+      <div class="w-full sm:w-[380px] h-full sm:h-[483px] sm:border border-gray-difficult sm:rounded-[22px] px-6 py-[36px] flex flex-col justify-between">
+        <div class="flex flex-wrap mb-5 sm:mb-0 font-inter font-medium text-4xl leading-9 numbers">
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              1
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              2
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              3
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              4
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              5
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              6
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              7
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              8
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              9
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center"></div>
+          <div class="w-1/3 flex justify-center">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              0
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center delete">
+            <div class="w-16 h-16 rounded-full hover:bg-number-bg flex justify-center items-center cursor-pointer">
+              <img src="./assets/img/delete.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <span class="font-inter front-normal text-[15px] leading-4 tracking-[.394737px] underline text-forgot-color text-center cursor-pointer">Forgot PIN code</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/js/fast_login.js"></script>
+</body>
+
+</html>

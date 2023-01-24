@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog by word</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="./assets/js/tailwind-config.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/file_upload.css">
+</head>
+
+<body>
+  <div class="font-roboto w-full h-screen flex flex-col">
+    <div class="w-full h-full px-5 sm:px-[27px] pt-[52px] sm:pt-[71px] flex flex-col">
+      <div class="flex justify-between items-center mb-3 sm:mb-[35px]">
+        <span class="font-medium text-[18px] sm:text-[20px]">MyBestFood</span>
+        <div class="flex">
+          <img src="./assets/img/search-orange.svg" alt="" class="brightness-0 w-5 sm:w-[26px] mr-5 sm:mr-[35px] hover:brightness-100 cursor-pointer">
+          <img src="./assets/img/user-orange.svg" alt="" class="brightness-0 w-5 sm:w-[26px] hover:brightness-100 cursor-pointer">
+        </div>
+      </div>
+    </div>
+    <div class="flex mb-[22px] px-5 sm:px-[27px] pt-4 border-t border-gray-difficult items-center">
+      <img src="./assets/img/left-arrow.svg" alt="" class="h-[14px] mr-3 cursor-pointer">
+      <span class="font-bold text-[22px] sm:text-3xl leading-6">Create recept</span>
+    </div>
+    <ul class="tab flex py-[14px] px-5 sm:px-[27px] mb-[21px] sm:mb-[54px] border-y border-gray-difficult font-inter font-medium text-sm sm:text-base leading-[18px] -tracking-[.084px] text-gray-font">
+      <li class="px-[10px] py-[6px] bg-gray-difficult rounded mr-[18px] sm:mr-6 cursor-pointer">Account</li>
+      <li class="px-[10px] py-[6px] hover:bg-number-bg rounded mr-[18px] sm:mr-6 cursor-pointer">Favorite</li>
+      <li class="px-[10px] py-[6px] hover:bg-number-bg rounded mr-[18px] sm:mr-6 cursor-pointer">Mine</li>
+      <li class="px-[10px] py-[6px] hover:bg-number-bg rounded cursor-pointer">Create</li>
+    </ul>
+    <div class="w-full h-full px-5 sm:px-[27px] flex flex-col">
+      <div class="flex flex-col sm:px-[103px]">
+        <div class="drop-zone w-full h-[200px] sm:h-[300px] p-1 mt-[1px] flex flex-col items-center justify-center border border-dashed border-gray-difficult rounded-[9px] mb-[35px] sm:mb-[30px] cursor-pointer">
+          <img src="./assets/img/add_img.svg" alt="" class="drop-zone__logo w-[38px] sm:w-[60px] mb-3 sm:mb-[21px]">
+          <span class="drop-zone__prompt font-inter font-normal text-sm sm:text-base leading-[30px] -tracking-[.084px]">Add recipe photo</span>
+          <input type="file" name="myFile" class="drop-zone__input hidden">
+        </div>
+        <div class="flex flex-col font-inter font-normal mb-[18px]">
+          <span class="text-sm leading-[30px] -tracking-[.084px] mb-1">Recipe name</span>
+          <input type="text" class="w-full h-[50px] border border-gray-difficult rounded-[9px] px-[14px] text-[15px] leading-6" placeholder="Enter recipe name">
+        </div>
+        <div class="flex flex-col font-inter font-normal mb-[25px]">
+          <span class="text-sm leading-[30px] -tracking-[.084px] mb-1">Description</span>
+          <textarea type="text" class="w-full h-[140px] border border-gray-difficult rounded-[9px] px-[14px] py-[12px] text-[15px] leading-6" placeholder="Enter description"></textarea>
+        </div>
+        <div class="flex flex-col font-inter font-normal mb-10 sm:mb-12">
+          <span class="text-sm leading-[30px] -tracking-[.084px] mb-1">Ingredients</span>
+          <textarea type="text" class="w-full h-[140px] border border-gray-difficult rounded-[9px] px-[14px] py-[12px] text-[15px] leading-6" placeholder="Enter ingredients"></textarea>
+        </div>
+        <span class="font-inter font-bold text-sm sm:text-[22px] leading-[30px] -tracking-[.084px] mb-[11px] sm:mb-[31px]">Preparation steps</span>
+        <div class="flex flex-col mb-[31px] sm:mb-[36px]">
+          <span class="font-inter font-normal text-sm leading-[30px] -tracking-[.084px] mb-1">Step 1</span>
+          <div class="drop-zone w-full h-[200px] sm:h-[300px] p-1 flex flex-col items-center justify-center border border-dashed border-gray-difficult rounded-[9px] cursor-pointer">
+            <img src="./assets/img/add_img.svg" alt="" class="drop-zone__logo w-[38px] sm:w-[60px] mb-3 sm:mb-[21px]">
+            <span class="drop-zone__prompt font-inter font-normal text-sm sm:text-base leading-[30px] -tracking-[.084px]">Add recipe photo</span>
+            <input type="file" name="myFile" class="drop-zone__input hidden">
+          </div>
+        </div>
+        <div class="flex flex-col font-inter font-normal mb-[18px]">
+          <span class="text-sm leading-[30px] -tracking-[.084px] mb-1">Add Preparation step discription</span>
+          <textarea type="text" class="w-full h-[140px] border border-gray-difficult rounded-[9px] px-[14px] py-[12px] text-[15px] leading-6" placeholder="Add Preparation step discription"></textarea>
+        </div>
+        <span class="font-inter font-medium text-[15px] leading-6 text-orange-difficult mb-[36px] cursor-pointer">Add step</span>
+        <div class="flex flex-col mb-[22px] font-inter font-normal leading-[30px] -tracking-[.084px] cursor-pointer">
+          <span class="text-sm mb-1">Time, min</span>
+          <div class="flex justify-between items-center pl-[14px] pr-[19px] h-[50px] border border-gray-difficult rounded-[9px]">
+            <div class="flex items-center">
+              <img src="./assets/img/clock.svg" alt="" class="h-[22px] mr-[10px]">
+              <span class="text-[15px] whitespace-nowrap">5-15</span>
+            </div>
+            <img src="./assets/img/left-arrow.svg" alt="" class="h-[14px] rotate-180">
+          </div>
+        </div>
+        <div class="flex flex-col mb-[31px] sm:mb-10 font-inter font-normal leading-[30px] -tracking-[.084px] cursor-pointer">
+          <span class="text-sm mb-1">Temperature, °C</span>
+          <div class="flex justify-between items-center pl-[14px] pr-[19px] h-[50px] border border-gray-difficult rounded-[9px]">
+            <div class="flex items-center">
+              <img src="./assets/img/termometer.svg" alt="" class="h-[22px] mr-[10px]">
+              <span class="text-[15px] whitespace-nowrap">35</span>
+            </div>
+            <img src="./assets/img/left-arrow.svg" alt="" class="h-[14px] rotate-180">
+          </div>
+        </div>
+        <div class="flex flex-col font-inter font-normal mb-[33px] sm:mb-[21px]">
+          <span class="text-sm leading-[30px] -tracking-[.084px] mb-1">Related knowledge</span>
+          <textarea type="text" class="w-full h-[140px] border border-gray-difficult rounded-[9px] px-[14px] py-[12px] text-[15px] leading-6" placeholder="Add Preparation step discription"></textarea>
+        </div>
+        <div class="flex justify-between items-center font-inter font-normal text-sm leading-[30px] -tracking-[.084px] mb-8 sm:mb-10">
+          <span>Who can see</span>
+          <div class="flex">
+            <span class="mr-[10px]">Public</span>
+            <div class="bg-gray-difficult hover:bg-gray-difficult-hover w-10 h-[25px] rounded-full mr-[10px] flex items-center p-[1px] switch cursor-pointer">
+              <div class="bg-white w-[23px] h-[23px] rounded-full ml-[15px] transition-all"></div>
+            </div>
+          </div>
+        </div>
+        <button class="w-full h-[50px] bg-orange-difficult hover:bg-orange-difficult-hover active:bg-dark-color disabled:bg-gray-difficult disabled:text-gray-difficult-hover rounded-[9px] font-inter font-medium text-[15px] leading-6 text-white mb-[30px] sm:mb-12">Add reciepe</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/js/file_upload.js"></script>
+  <script src="./assets/js/switch.js"></script>
+  <script src="./assets/js/tab.js"></script>
+</body>
+
+</html>
